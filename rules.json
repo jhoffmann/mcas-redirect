@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://\\1github.com.mcas.ms/"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https://([^/]*\\.)?github\\.com(/|$)",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://\\1atlassian.net.mcas.ms/"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https://([^/]*\\.)?atlassian\\.net(/|$)",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://\\1console.aws.amazon.com.mcas.ms/"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https://([^/]*\\.)?console\\.aws\\.amazon\\.com(/|$)",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://\\1signin.aws.amazon.com.mcas.ms/"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https://([^/]*\\.)?signin\\.aws\\.amazon\\.com(/|$)",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://\\1sharepoint.com.mcas.ms/"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https://([^/]*\\.)?sharepoint\\.com(/|$)",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]

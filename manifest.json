@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "MCAS Redirector",
+  "version": "1.0",
+  "description": "Redirect corporate domains to their MDCA (.mcas.ms) counterparts.",
+  "permissions": ["declarativeNetRequest"],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "mcas_ruleset",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "host_permissions": [
+    "*://*.github.com/*",
+    "*://*.atlassian.net/*",
+    "*://*.aws.amazon.com/*",
+    "*://*.sharepoint.com/*",
+    "*://*.mcas.ms/*"
+  ]
+}
